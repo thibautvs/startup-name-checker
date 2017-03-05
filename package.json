@@ -4,6 +4,7 @@
   "description": "A name availability checker for new startups",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,10 @@
   "homepage": "https://github.com/thibautvs/startup-name-checker#readme",
   "dependencies": {
     "chalk": "^1.1.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0"
   }
 }

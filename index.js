@@ -1,11 +1,12 @@
-const http = require('http')
-const chalk = require('chalk')
-const config = require('./config.json')
+import http from 'http'
+import chalk from 'chalk'
+import config from './config.json'
+
 const log = console.log
 
 if (process.argv.length !== 3) {
   log(chalk.red('Wrong number of arguments. Expected 1 argument: name.'))
-  return
+  process.exit(1)
 }
 
 checkDomainNames()
@@ -18,6 +19,6 @@ function checkDomainNames() {
 }
 
 function checkSocialMediaHandles() {
-  log(chalk.underline.bold('Social media'))
+  log(chalk.underline.bold('Social media handles'))
   log(config.social)
 }
