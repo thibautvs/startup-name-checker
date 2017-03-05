@@ -1,0 +1,27 @@
+{
+  "name": "startup-name-checker",
+  "version": "1.0.0",
+  "description": "A name availability checker for new startups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibautvs/startup-name-checker.git"
+  },
+  "keywords": [
+    "startup",
+    "name",
+    "checker"
+  ],
+  "author": "Thibaut Van Spaandonck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thibautvs/startup-name-checker/issues"
+  },
+  "homepage": "https://github.com/thibautvs/startup-name-checker#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
