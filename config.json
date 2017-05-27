@@ -4,9 +4,13 @@
     ".io"
   ],
   "social": [
-    "facebook",
-    "twitter",
-    "instagram",
-    "github"
-  ]
+    { "name": "Facebook", "url": "https://www.facebook.com/{startupName}" },
+    { "name": "Twitter", "url": "https://twitter.com/{startupName}" },
+    { "name": "Instagram", "url": "https://www.instagram.com/{startupName}" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/{startupName}" },
+    { "name": "Google+", "url": "https://plus.google.com/+{startupName}" },
+    { "name": "YouTube", "url": "https://www.youtube.com/user/{startupName}" },
+    { "name": "GitHub", "url": "https://github.com/{startupName}" }
+  ],
+  "requestTimeout": 5000
 }
