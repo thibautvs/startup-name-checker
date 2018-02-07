@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-fetch'
+﻿import fetch from 'isomorphic-fetch'
 import chalk from 'chalk'
 import config from '../config.json'
 
@@ -24,8 +24,20 @@ function logTitle(title) {
   console.log(chalk.underline.bold(`${title}\n`))
 }
 
+let symbols = {
+  ok: '✓',
+  err: '✗'
+};
+
+if ('win32' == process.platform) {
+  symbols = {
+    ok: '\u221A',
+    err: '\u00D7'
+  };
+}
+
 function logAvailability(isAvailable, msg) {
-  console.log(`${isAvailable ? chalk.green('✓') : chalk.red('✗')} ${msg}`)
+  console.log(`${isAvailable ? chalk.green(symbols.ok) : chalk.red(symbols.err)} ${msg}`)
 }
 
 export { isURLAvailable, logTitle, logAvailability }
