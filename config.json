@@ -1,7 +1,9 @@
-{
+﻿{
   "domains": [
     ".com",
+    ".org",
     ".io"
+
   ],
   "social": [
     { "name": "Facebook", "url": "https://www.facebook.com/{startupName}" },
@@ -10,7 +12,8 @@
     { "name": "LinkedIn", "url": "https://www.linkedin.com/company/{startupName}" },
     { "name": "Google+", "url": "https://plus.google.com/+{startupName}" },
     { "name": "YouTube", "url": "https://www.youtube.com/user/{startupName}" },
-    { "name": "GitHub", "url": "https://github.com/{startupName}" }
+    { "name": "GitHub", "url": "https://github.com/{startupName}" },
+    { "name": "BitBucket", "url": "https://bitbucket.org/{startupName}" }
   ],
   "requestTimeout": 5000
 }
