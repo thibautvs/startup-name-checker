@@ -1,10 +1,10 @@
-import config from '../config'
+﻿import config from '../config'
 import { isURLAvailable, logTitle, logAvailability } from './utils'
 
 async function checkDomainNames(name) {
   logTitle('Domain names')
   for (const domain of config.domains) {
-    const url = `http://www.${name}${domain}`
+    const url = `http://${name}${domain}`
     const isAvailable = await isURLAvailable(url)
     logAvailability(isAvailable, domain)
   }
